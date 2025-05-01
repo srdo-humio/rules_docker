@@ -51,7 +51,7 @@ def repositories():
     Call the core "go_deps" function to reduce boilerplate. This is
     idempotent if folks call it themselves.
     """
-    _go_deps()
+    # _go_deps()
 
     excludes = native.existing_rules().keys()
     if "java_image_base" not in excludes:
